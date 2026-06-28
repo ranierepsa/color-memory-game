@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Color Memory</h1>
+
+        <div id="status">Press <strong>Start</strong> to play</div>
+
+        <div class="board">
+            <button class="color-btn" id="btn-green"  data-color="green"></button>
+            <button class="color-btn" id="btn-red"    data-color="red"></button>
+            <button class="color-btn" id="btn-yellow" data-color="yellow"></button>
+            <button class="color-btn" id="btn-blue"   data-color="blue"></button>
+        </div>
+
+        <div class="controls">
+            <button id="start-btn">Start</button>
+            <span id="round-display"></span>
+        </div>
+
+        <div id="gameover-panel" class="hidden">
+            <p>Game over! Your score: <strong id="final-score"></strong></p>
+            <input id="player-name" type="text" maxlength="20" placeholder="Your name">
+            <button id="save-btn">Save Score</button>
+        </div>
+
+        <div class="leaderboard">
+            <h2>Top 10</h2>
+            <ol id="leaderboard-list"></ol>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
